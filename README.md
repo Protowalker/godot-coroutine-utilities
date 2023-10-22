@@ -3,7 +3,7 @@ Await multiple coroutines or signals at once. Similar to `Promise.all` or `Promi
 
 # Usage
 There are two classes, `CRArr` and `CRDict`.  
-## CRArr
+### CRArr
 ```gd
 var cr_arr := CRArr.new()
 cr_arr.add_signal(get_tree().create_timer(3).timeout)
@@ -21,7 +21,7 @@ cr_arr.add_signal(enemy_entered_area)
 var result := await cr_arr.await_all()
 # result in this case will be [null, Area2D]
 ```
-## CRDict  
+### CRDict  
 ```gd
 var cr_dict := CRDict.new()
 cr_dict.add_signal("timer", get_tree().create_timer(3).timeout)
