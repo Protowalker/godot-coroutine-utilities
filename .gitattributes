@@ -3,5 +3,5 @@
 
 # Only include the addons folder when downloading from the Asset Library.
 /**        export-ignore
-/addons/godot-coroutine-utilities !export-ignore
+/addons/godot-coroutine-utilities/** !export-ignore
 /addons/godot-coroutine-utilities/tests export-ignore
